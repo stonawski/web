@@ -1,190 +1,405 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://kit.fontawesome.com/a255525a84.js" crossorigin="anonymous"></script>
-        <title>StonawskiWEB</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">EDU Plus</a></li>
-                    <li><a href="#">Home<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">Courses<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">Events<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">Pages<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">Blog<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">Contacts<i class="fas fa-angle-down"></i></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-        <div class="grid-container">
-                <div class="grid-item grid-item-1">
-                    <hgroup>
-                        <h3>--- Welcome to EDUPlus</h3>                           
-                        <h2>More than 1200 online courses</h2>
-                    </hgroup>
-                    <input type="text" placeholder="Search courses">
-                    <button type="submit">Ikona lupy</button>
-                </div>
-                <div class="grid-item grid-item-2">
-                    <p>Sed ut perspiciatis unde omnis natus error sit voluptatem</p>
-                </div>                   
-                <div class="grid-item grid-item-3">
-                      <h4>Online support +012(345)6789</h4>
-                </div>
-               
-                <div class="grid-item grid-section-1 grid-item-4"> 
-                    <h2>3045+</h2>
-                    <h4>Saticfied Students</h4> 
-                </div>
-                <div class="grid-item grid-section-1 grid-item-5">
-                    <h2>7825+</h2>
-                    <h4>Available Courses</h4>
-                </div>
-                <div class="grid-item grid-section-1 grid-item-6">
-                    <h2>9862+</h2>
-                    <h4>Graduate Students</h4>
-                </div>
-                <div class="grid-item grid-section-1 grid-item-7">
-                    <h2>8963+</h2>
-                    <h4>Active Courses</h4>
-                </div>
-        </div>
-    </main>
-    <section class="grid-container">
-            <div class="grid-item grid-item-8">
-                <hgroup>
-                    <h3>--- Popular Categories ---</h3>
-                    <h2>Course Categories</h2>
-                </hgroup>
-            </div>
-            <div class="grid-item grid-item-9">
-                Graphics Design
-            </div> 
-            <div class="grid-item grid-item-10">
-                Bussiness studies
-            </div>
-            <div class="grid-item grid-item-11">
-                Web Development
-            </div>
-            <div class="grid-item grid-item-12">
-                Product Engineering
-            </div>
-            
-            <div class="grid-item grid-item-13">
-                Basic Photography
-            </div>
-            <div class="grid-item grid-item-14">
-                Medical & Health
-            </div>
-            <div class="grid-item grid-item-15">
-                Marketing Strategy
-            </div>
-            <div class="grid-item grid-item-16">
-                Mobile UI Design
-            </div>
-    </section>
-        <section class="grid-container-2 section-dark">
-            <hgroup class="grid-item grid2-item-1">
-                <h3>--- Popular Courses ---</h3>
-                <h2>Available Courses</h2> 
-            </hgroup>
-            <div class="grid-item grid2-item-2">Best Courses For Learning English Courses</div>
-            <div class="grid-item grid2-item-3">Learning About It Consulting Business Solutions</div>
-            <div class="grid-item grid2-item-4">Introduced About Basic Web Design For Beginners</div>
-                
-            <button class="grid-item grid2-item-5" type="button">VIEW ALL COURSES ---></button>
-        </section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a255525a84.js" crossorigin="anonymous"></script>
+    <title>StonawskiWEB</title>
+</head>
+
+<body>
+    <div class="grid">
         
-        <section>
+        <nav class="grid-item grid-nav">
+            <ul class="left-nav">
+                <li><a href="#"><img src="./img/logo.jpg" height="20"></a></li>
+                <li><a href="#">Home<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Courses<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Events<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Pages<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Blog<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Contacts<i class="fas fa-angle-down"></i></a></li>
+            </ul>
+            <ul class="right-nav">
+                <li class="right-nav-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="right-nav-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="right-nav-item"><a href="#"><i class="fas fa-user-circle"></i> SIGN IN</a></li>
+                <li class="right-nav-item"><a href="#"></a></li>
+            </ul>
+        </nav>
+        <div class="grid-item bg-main"></div>
+        <div class="bg-light-main"></div>
+        <div class="bg-dark-main"></div>
+        <div class="grid-item grid-main">
+            <div class="flex-main">
+                <hgroup class="flex-main-item">
+                    <h3><i class="fas fa-ellipsis-h"></i>Welcome to EDUPlus</h3>
+                    <h1>More than 1200 Online Courses</h1>
+                </hgroup>
+                <div class="flex-main-item"></div>
+                <div class="flex-main-item">
+                    <input type="text" placeholder="Search courses"><button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="flex-main-item">
+                    Sed ut perspiciatis unde omnis natus error sit voluptatem
+                </div>
+                <div class="flex-main-item">
+                    <i class="fas fa-wheelchair fa-2x"></i> 
+                    Online support<br>
+                    +012(345)6789
+                </div>
+            </div>
+            <div class="flex-main-2">
+                <div class="flex-main-2-item">
+                    <i class="fas fa-users"></i> 3045+<br>
+                    <span>Saticfied Students</span>
+                </div>
+                <div class="flex-main-2-item">
+                    <i class="fas fa-book"></i> 7825+<br>
+                    <span>Available Courses</span>
+                </div>
+                <div class="flex-main-2-item">
+                    <i class="fas fa-graduation-cap"></i> 9862+<br>
+                    <span>Graduate Students</span>
+                </div>
+                <div class="flex-main-2-item">
+                    <i class="fas fa-laptop-code"></i> 8963+<br>
+                    <span>Active Courses</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="grid-item grid-pop-cat">
+            <hgroup class="section-names">
+                <h3><i class="fas fa-ellipsis-h"></i> Popular Categories <i class="fas fa-ellipsis-h"></i></h3>
+                <h2>Course Categories</h2>
+            </hgroup>
+            <div class="flex-pop-cat">
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr1.jpg" alt="obr1"><br>
+                    Graphics Design<br>
+                    Web Design Course<br>
+                    <i class="fas fa-users"></i> 250 <i class="fas fa-book"></i> 800+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr2.jpg" alt="obr2"><br>
+                    Bussiness studies<br>
+                    Finance Bussiness<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr3.jpg" alt="obr3"><br>
+                    Web Development<br>
+                    Web Design Course<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr4.jpg" alt="obr4"><br>
+                    Product Engineering<br>
+                    Web Design Course<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr5.jpg" alt="obr5"><br>
+                    Basic Photography<br>
+                    Film Movies & Photography<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr6.jpg" alt="obr6"><br>
+                    Medical & Health<br>
+                    Doctors & Nursing<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr7.jpg" alt="obr7"><br>
+                    Marketing Strategy<br>
+                    Social Media Marketing<br>
+                    <i class="fas fa-users"></i> 250 <i class="fas fa-book"></i> 50+ Courses<br>
+                </div>
+                <div class="flex-pop-cat-item">
+                    <img src="img/pop-cat/obr8.jpg" alt="obr8"><br>
+                    Mobile UI Design<br>
+                    Web Design Course<br>
+                    <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
+                </div>
+            </div>
+        </section>
+        <div class="grid-item bg-dark"></div>
+        <section class="grid-item grid-pop-cour">
+            <hgroup class="section-names">
+                <h3><i class="fas fa-ellipsis-h"></i> Popular Courses <i class="fas fa-ellipsis-h"></i></h3>
+                <h2>Available Courses</h2>
+            </hgroup>
+            <div class="flex-pop-cour">
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="/img/pop-cat/obr1.jpg" alt="obr1" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                <p class="rounded-text">English</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3> Courses For Learning English Courses</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">English</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>Courses For Learning English Courses</h3><br>
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+        
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+        
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="/img/pop-cat/obr4.jpg" alt="obr1" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                <p class="rounded-text">Bussiness</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About It Consulting Business Solutions</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Bussiness</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About It Consulting Business Solutions</h3><br>
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="/img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar">Warner <p class="price">$59.95</p><br>
+                                </div>
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <div class="info-row">
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="big-button">VIEW ALL COURSES <i class="fas fa-long-arrow-alt-right"></i></button>
+        </section>
+
+        <section class="grid-item grid-photo">
             <hgroup>
-                <h3>--- Photo & Album ---</h3>
+                <h3><i class="fas fa-ellipsis-h"></i> Photo & Album <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Campus Gallery</h2>
             </hgroup>
-            
-                <button type = "button">Show All</button>
-                <button type = "button">University</button>
-                <button type = "button">Group Study</button>
-                <button type = "button">Awards</button>
-                <button type = "button">Students</button>
-                <button type = "button">Teachers</button>
-                <button type = "button">Campus</button>
 
+            <button type="button">Show All</button>
+            <button type="button">University</button>
+            <button type="button">Group Study</button>
+            <button type="button">Awards</button>
+            <button type="button">Students</button>
+            <button type="button">Teachers</button>
+            <button type="button">Campus</button>
 
-                    Pic1
-                    Pic2
-                    Pic3
-                    Pic4
-                    Pic5
-                    Pic6
+            <div class="flex-photo">
+                Pic1
+                Pic2
+                Pic3
+                Pic4
+                Pic5
+                Pic6
+            </div>
 
         </section>
-        <section>
-            <hgroup>
-                <h3>--- Team Members ---</h3>
+        <div class="grid-item bg-light"></div>
+        <section class="grid-item grid-team">
+            <hgroup class="section-names">
+                <h3><i class="fas fa-ellipsis-h"></i> Team Members <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Expert Instructors</h2>
             </hgroup>
-            
-                Somalia D Silva
-                David D Warner
-                Xavi Toni Crusse
-                Shaine Watson
+            <div class="flex-team">
+                <div class="flex-team-item">
+                    <img src="/img/instructors/inst1.jpg" alt="inst1" class="nahled">
+                    <div class="content">
+                        <div class="dropdown">
+                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="dropdown-content">
+                                <i class="fab fa-facebook fa-2x"></i><br>
+                                <i class="fab fa-youtube fa-2x"></i><br>
+                                <i class="fab fa-twitter fa-2x"></i><br>
+                            </div>
+                        </div>
+                        <h4>Somalia D Silva</h4>
+                        Math Teacher<br>
+                        <hr>
+                        <i class="fas fa-book"></i>750+ Courses<br>
+                    </div>
+                </div>
+                <div class="flex-team-item">
+                    <img src="/img/instructors/inst2.jpg" alt="inst1" class="nahled">
+                    <div class="content">
+                        <div class="dropdown">
+                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="dropdown-content">
+                                <i class="fab fa-facebook fa-2x"></i><br>
+                                <i class="fab fa-youtube fa-2x"></i><br>
+                                <i class="fab fa-twitter fa-2x"></i><br>
+                            </div>
+                        </div>
+                        <h4>David D Warner</h4>
+                        English Teacher<br>
+                        <hr>
+                        <i class="fas fa-book"></i>3850+ Courses<br>
+                    </div>
+                </div>
+                <div class="flex-team-item">
+                    <img src="/img/instructors/inst3.jpg" alt="inst1" class="nahled">
+                    <div class="content">
+                        <div class="dropdown">
+                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="dropdown-content">
+                                <i class="fab fa-facebook fa-2x"></i><br>
+                                <i class="fab fa-youtube fa-2x"></i><br>
+                                <i class="fab fa-twitter fa-2x"></i><br>
+                            </div>
+                        </div>
+                        <h4>Xavi Toni Crusse</h4> 
+                        Computer Teacher<br>
+                        <hr>
+                        <i class="fas fa-book"></i>658+ Courses<br>
+                    </div>
+                </div>
+                <div class="flex-team-item">
+                    <img src="/img/instructors/inst4.jpg" alt="inst1" class="nahled">
+                    <div class="content">
+                        <div class="dropdown">
+                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="dropdown-content">
+                                <i class="fab fa-facebook fa-2x"></i><br>
+                                <i class="fab fa-youtube fa-2x"></i><br>
+                                <i class="fab fa-twitter fa-2x"></i><br>
+                            </div>
+                        </div>
+                        <h4>Shaine Watson</h4>
+                        Web Designer<br>
+                        <hr>
+                        <i class="fas fa-book"></i>87+ Courses<br>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="grid-item grid-events">
             <hgroup>
-                <h3>--- Latest Events ---</h3>
+                <h3><i class="fas fa-ellipsis-h"></i> Latest Events <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Upcoming Events</h2>
             </hgroup>
-            
-                    Web Design & Development Conference 2020
-                    Annual Conference 2020
-                    Annual Conference 2020
 
-            <button type = "button">VIEW ALL EVENTS ---></button>
+            Web Design & Development Conference 2020
+            Annual Conference 2020
+            Annual Conference 2020
+
+            <button type="button">VIEW ALL EVENTS ---></button>
         </section>
-        <section>
+        <section class="grid-item grid-feedback">
             <hgroup>
-                <h3>--- Students Feedback ---</h3>
-                <h2>What Our Students Say</h2> 
+                <h3><i class="fas fa-ellipsis-h"></i> Students Feedback <i class="fas fa-ellipsis-h"></i></h3>
+                <h2>What Our Students Say</h2>
             </hgroup>
-        
-                <button>šipka doleva</button>
-                <button>šipka doprava</button>
+
+            <button>šipka doleva</button>
+            <button>šipka doprava</button>
 
         </section>
-        <section>
+        <section class="grid-item grid-career">
             <hgroup>
-                <h3>--- Build A Career</h3>
-                <h2>Become an Instructor</h2> 
+                <h3><i class="fas fa-ellipsis-h"></i> Build A Career</h3>
+                <h2>Become an Instructor</h2>
             </hgroup>
-            
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun</p>
-                    Digitalization
-                    Book Friendly               
-                    Sed ut perspia unde omnis aste natus error sit volu
-                    Sed ut perspia unde omnis aste natus error sit volu
 
-                    <button>JOIN WITH US ---></button>
-                    <button>BECOME A PARTNER</button>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun</p>
+            Digitalization
+            Book Friendly
+            Sed ut perspia unde omnis aste natus error sit volu
+            Sed ut perspia unde omnis aste natus error sit volu
+
+            <button>JOIN WITH US ---></button>
+            <button>BECOME A PARTNER</button>
 
         </section>
-        <section>
+        <section class="grid-item grid-artices">
             <hgroup>
-                <h3>--- Artices & Tipes ---</h3>
+                <h3><i class="fas fa-ellipsis-h"></i> Artices & Tipes <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Latest News & Blog</h2>
             </hgroup>
 
-                Learning Resources In Challenec Times Online Workshops
-                Djang Highlights Models Admin And Harness Relational Database
-                Smash Podcast Episode With Lura Kalbag What Is Online Privacy
+            Learning Resources In Challenec Times Online Workshops
+            Djang Highlights Models Admin And Harness Relational Database
+            Smash Podcast Episode With Lura Kalbag What Is Online Privacy
         </section>
-        <footer>
+
+        <div class="grid-item grid-footer">
             <table>
                 <tr>
                     <td colspan="6">obrazek sponzoru</td>
@@ -205,7 +420,9 @@
                     <td>Web Development</td>
                     <td>Color Combinations</td>
                     <td>About Eduket</td>
-                    <td colspan="3" rowspan="2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</td>
+                    <td colspan="3" rowspan="2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque laudantium, totam rem aperiam</td>
                 </tr>
                 <tr>
                     <td>Bussiness Studies</td>
@@ -230,6 +447,9 @@
                     <td>Newsletters</td>
                 </tr>
             </table>
-        </footer>
-    </body>
+        </div>
+
+    </div>
+</body>
+
 </html>
