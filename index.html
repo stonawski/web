@@ -11,8 +11,10 @@
 </head>
 
 <body>
-    <div class="grid">
-        
+    <div class="grid">  
+        <div class="bg-main"></div>
+        <div class="bg-light-main"></div>
+        <div class="bg-dark-main"></div>
         <nav class="grid-item grid-nav">
             <ul class="left-nav">
                 <li><a href="#"><img src="./img/logo.jpg" height="20"></a></li>
@@ -30,9 +32,6 @@
                 <li class="right-nav-item"><a href="#"></a></li>
             </ul>
         </nav>
-        <div class="grid-item bg-main"></div>
-        <div class="bg-light-main"></div>
-        <div class="bg-dark-main"></div>
         <div class="grid-item grid-main">
             <div class="flex-main">
                 <hgroup class="flex-main-item">
@@ -41,7 +40,9 @@
                 </hgroup>
                 <div class="flex-main-item"></div>
                 <div class="flex-main-item">
-                    <input type="text" placeholder="Search courses"><button type="submit"><i class="fas fa-search"></i></button>
+                    <div class="input-style">
+                        <input type="text" placeholder="Search courses "><i class="fas fa-angle-down"></i><button type="submit" class="small-button"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
                 <div class="flex-main-item">
                     Sed ut perspiciatis unde omnis natus error sit voluptatem
@@ -80,49 +81,49 @@
             <div class="flex-pop-cat">
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr1.jpg" alt="obr1"><br>
-                    Graphics Design<br>
+                    <span>Graphics Design</span><br>
                     Web Design Course<br>
                     <i class="fas fa-users"></i> 250 <i class="fas fa-book"></i> 800+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr2.jpg" alt="obr2"><br>
-                    Bussiness studies<br>
+                    <span>Bussiness studies</span><br>
                     Finance Bussiness<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr3.jpg" alt="obr3"><br>
-                    Web Development<br>
+                    <span>Web Development</span><br>
                     Web Design Course<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr4.jpg" alt="obr4"><br>
-                    Product Engineering<br>
+                    <span>Product Engineering</span><br>
                     Web Design Course<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr5.jpg" alt="obr5"><br>
-                    Basic Photography<br>
+                    <span>Basic Photography</span><br>
                     Film Movies & Photography<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr6.jpg" alt="obr6"><br>
-                    Medical & Health<br>
+                    <span>Medical & Health</span><br>
                     Doctors & Nursing<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr7.jpg" alt="obr7"><br>
-                    Marketing Strategy<br>
+                    <span>Marketing Strategy</span><br>
                     Social Media Marketing<br>
                     <i class="fas fa-users"></i> 250 <i class="fas fa-book"></i> 50+ Courses<br>
                 </div>
                 <div class="flex-pop-cat-item">
                     <img src="img/pop-cat/obr8.jpg" alt="obr8"><br>
-                    Mobile UI Design<br>
+                    <span>Mobile UI Design</span><br>
                     Web Design Course<br>
                     <i class="fas fa-users"></i> 320 <i class="fas fa-book"></i> 750+ Courses<br>
                 </div>
@@ -213,7 +214,7 @@
                             <img src="/img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
                             <div class="content">
                                 <div class="info-row">
-                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar">Warner <p class="price">$59.95</p><br>
+                                    <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
                                 </div>
                                 <p class="rounded-text">Design</p> 
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
@@ -253,21 +254,59 @@
                 <h2>Campus Gallery</h2>
             </hgroup>
 
-            <button type="button">Show All</button>
-            <button type="button">University</button>
-            <button type="button">Group Study</button>
-            <button type="button">Awards</button>
-            <button type="button">Students</button>
-            <button type="button">Teachers</button>
-            <button type="button">Campus</button>
+            <button type="button" class="gallery-button">Show All</button>
+            <button type="button" class="gallery-button">University</button>
+            <button type="button" class="gallery-button">Group Study</button>
+            <button type="button" class="gallery-button">Awards</button>
+            <button type="button" class="gallery-button">Students</button>
+            <button type="button" class="gallery-button">Teachers</button>
+            <button type="button" class="gallery-button">Campus</button>
+
+            <hr>
 
             <div class="flex-photo">
-                Pic1
-                Pic2
-                Pic3
-                Pic4
-                Pic5
-                Pic6
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img1.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>University</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img2.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>Group Study</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img3.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>Awards</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img4.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>Students</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img5.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>Teachers</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-photo-item">
+                    <img src="/img/gallery/img6.jpg">
+                    <div class="flex-photo-overlay">
+                        <h4>Campus</h4>
+                        <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -282,171 +321,297 @@
                     <img src="/img/instructors/inst1.jpg" alt="inst1" class="nahled">
                     <div class="content">
                         <div class="dropdown">
-                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="plus"><img src="/img/icons/plus.jpg"></div>
                             <div class="dropdown-content">
-                                <i class="fab fa-facebook fa-2x"></i><br>
-                                <i class="fab fa-youtube fa-2x"></i><br>
-                                <i class="fab fa-twitter fa-2x"></i><br>
+                                <i class="fab fa-facebook fa-2x fa-2x dropdown-content-item-1"></i><br>
+                                <i class="fab fa-youtube fa-2x  fa-2x dropdown-content-item-2"></i><br>
+                                <i class="fab fa-twitter fa-2x  fa-2x dropdown-content-item-1"></i><br>
                             </div>
                         </div>
                         <h4>Somalia D Silva</h4>
                         Math Teacher<br>
                         <hr>
-                        <i class="fas fa-book"></i>750+ Courses<br>
+                        <i class="fas fa-book"></i> 750+ Courses<br>
                     </div>
                 </div>
                 <div class="flex-team-item">
                     <img src="/img/instructors/inst2.jpg" alt="inst1" class="nahled">
                     <div class="content">
                         <div class="dropdown">
-                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="plus"><img src="/img/icons/plus.jpg"></div>
                             <div class="dropdown-content">
-                                <i class="fab fa-facebook fa-2x"></i><br>
-                                <i class="fab fa-youtube fa-2x"></i><br>
-                                <i class="fab fa-twitter fa-2x"></i><br>
+                                <i class="fab fa-facebook fa-2x fa-2x dropdown-content-item-1"></i><br>
+                                <i class="fab fa-youtube fa-2x  fa-2x dropdown-content-item-2"></i><br>
+                                <i class="fab fa-twitter fa-2x  fa-2x dropdown-content-item-1"></i><br>
                             </div>
                         </div>
                         <h4>David D Warner</h4>
                         English Teacher<br>
                         <hr>
-                        <i class="fas fa-book"></i>3850+ Courses<br>
+                        <i class="fas fa-book"></i> 3850+ Courses<br>
                     </div>
                 </div>
                 <div class="flex-team-item">
                     <img src="/img/instructors/inst3.jpg" alt="inst1" class="nahled">
                     <div class="content">
                         <div class="dropdown">
-                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="plus"><img src="/img/icons/plus.jpg"></div>
                             <div class="dropdown-content">
-                                <i class="fab fa-facebook fa-2x"></i><br>
-                                <i class="fab fa-youtube fa-2x"></i><br>
-                                <i class="fab fa-twitter fa-2x"></i><br>
+                                <i class="fab fa-facebook fa-2x dropdown-content-item-1"></i><br>
+                                <i class="fab fa-youtube  fa-2x dropdown-content-item-2"></i><br>
+                                <i class="fab fa-twitter  fa-2x dropdown-content-item-1"></i><br>
                             </div>
                         </div>
                         <h4>Xavi Toni Crusse</h4> 
                         Computer Teacher<br>
                         <hr>
-                        <i class="fas fa-book"></i>658+ Courses<br>
+                        <i class="fas fa-book"></i> 658+ Courses<br>
                     </div>
                 </div>
                 <div class="flex-team-item">
                     <img src="/img/instructors/inst4.jpg" alt="inst1" class="nahled">
                     <div class="content">
                         <div class="dropdown">
-                            <div class="plus"><i class="fas fa-plus-square fa-2x"></i></div>
+                            <div class="plus"><img src="/img/icons/plus.jpg"></div>
                             <div class="dropdown-content">
-                                <i class="fab fa-facebook fa-2x"></i><br>
-                                <i class="fab fa-youtube fa-2x"></i><br>
-                                <i class="fab fa-twitter fa-2x"></i><br>
+                                <i class="fab fa-facebook fa-2x fa-2x dropdown-content-item-1"></i><br>
+                                <i class="fab fa-youtube fa-2x  fa-2x dropdown-content-item-2"></i><br>
+                                <i class="fab fa-twitter fa-2x  fa-2x dropdown-content-item-1"></i><br>
                             </div>
                         </div>
                         <h4>Shaine Watson</h4>
                         Web Designer<br>
                         <hr>
-                        <i class="fas fa-book"></i>87+ Courses<br>
+                        <i class="fas fa-book"></i> 87+ Courses<br>
                     </div>
                 </div>
             </div>
         </section>
         <section class="grid-item grid-events">
-            <hgroup>
+            <hgroup class="section-names">
                 <h3><i class="fas fa-ellipsis-h"></i> Latest Events <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Upcoming Events</h2>
             </hgroup>
-
-            Web Design & Development Conference 2020
-            Annual Conference 2020
-            Annual Conference 2020
-
-            <button type="button">VIEW ALL EVENTS ---></button>
+            <div class="flex-events">
+                <div class="flex-events-item">
+                    <img src="/img/events/people.jpg" alt="people">
+                    <div class="content">
+                        <div class="price-events-main">$20</div>
+                        <span><i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-clock"></i> 08 AM - 09 PM <i class="fas fa-map-marker-alt"></i> PARIS, FRANCE</span><br>
+                        <h4>Web Design & Development Conference 2020</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt mollitia quae et repudiandae natus maiores id nihil adipisci eius!</p>
+                        <button type="button" class="event-button">JOIN EVENT <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-events-item">
+                    <div class="content-small">
+                        <div class="price-events-side">$20</div>
+                        <span><i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-clock"></i> 08 AM - 09 PM</span><br>
+                        <h4>Annual Conference 2020</h4> 
+                        <button type="button" class="event-button">JOIN EVENT <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex-events-item">
+                    <div class="content-small">
+                        <span><div class="price-events-side">$20</div>
+                        <i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-clock"></i> 08 AM - 09 PM </span><br>
+                        <h4>Annual Conference 2020</h4> 
+                        <button type="button" class="event-button">JOIN EVENT <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <button class="big-button">VIEW ALL EVENTS ---></button>
         </section>
+        <div class="feedback-bg"></div>
         <section class="grid-item grid-feedback">
-            <hgroup>
+            <hgroup class="section-names">
                 <h3><i class="fas fa-ellipsis-h"></i> Students Feedback <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>What Our Students Say</h2>
             </hgroup>
 
-            <button>šipka doleva</button>
-            <button>šipka doprava</button>
+            <div class="flex-feedback">
+                <div class="flex-feedback-item">
+                    <div class="content">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, sint, pariatur eius, quaerat numquam perspiciatis illo harum voluptate amet dolores ducimus vel et? Optio.</p>
+                        <div class="thin-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, sunt?</div> 
+                        <div class="info-row">
+                            <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> Sousa Fernandes<br> <span>CEO & Founder</span> 
+                        </div>   
+                        <div class="buttons">
+                            <button class="small-button"><i class="fas fa-arrow-left"></i></button>
+                            <button class="small-button"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                        <i class="fas fa-quote-left fa-5x"></i>
+                    </div>   
+                </div>
+                <div class="flex-feedback-item">
+                    <div class="pictures">
+                        <img src="/img/feedback/img1.jpg" alt="people">
+                        <img src="/img/feedback/img2.jpg" alt="people">
+                        <img src="/img/feedback/img3.jpg" alt="people">
+                        <img src="/img/feedback/img4.jpg" alt="people">
+                        <img src="/img/feedback/img5.jpg" alt="people">
+                        <img src="/img/feedback/img6.jpg" alt="people">
+                        <img src="/img/feedback/img7.jpg" alt="people">
+                        <img src="/img/feedback/img8.jpg" alt="people">
+                    </div>
+                </div>
+            </div>
+            
 
         </section>
+        <div class="bg-light-2"></div>
         <section class="grid-item grid-career">
-            <hgroup>
-                <h3><i class="fas fa-ellipsis-h"></i> Build A Career</h3>
-                <h2>Become an Instructor</h2>
-            </hgroup>
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun</p>
-            Digitalization
-            Book Friendly
-            Sed ut perspia unde omnis aste natus error sit volu
-            Sed ut perspia unde omnis aste natus error sit volu
-
-            <button>JOIN WITH US ---></button>
-            <button>BECOME A PARTNER</button>
+            <div class="flex-career">
+                <div class="flex-career-item">
+                    <img src="/img/career-1.jpg">
+                    <img src="/img/career-2.jpg">
+                </div>
+                <div class="flex-career-item">
+                    <hgroup>
+                        <h3><i class="fas fa-ellipsis-h"></i> Build A Career</h3>
+                        <h2>Become an Instructor</h2>
+                    </hgroup>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun</p>
+                    
+                    <div class="inner-flex">
+                        <div class="inner-flex-item">
+                            <i class="fas fa-laptop-code fa-2x"></i> 
+                            <h4>Digitalization</h4>
+                            <p>Sed ut perspia unde omnis aste natus error sit volu</p>
+                        </div>
+                        <div class="inner-flex-item">
+                            <i class="fas fa-book fa-2x"></i> 
+                            <h4>Book Friendly</h4>
+                            <p>Sed ut perspia unde omnis aste natus error sit volu</p>
+                        </div>
+                    </div>
+                   
+                    <div class="buttons">
+                        <button class="middle-button">JOIN WITH US <i class="fas fa-long-arrow-alt-right"></i></button>
+                        <button class="middle-button">BECOME A PARTNER</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
 
         </section>
         <section class="grid-item grid-artices">
-            <hgroup>
+            <hgroup class="section-names">
                 <h3><i class="fas fa-ellipsis-h"></i> Artices & Tipes <i class="fas fa-ellipsis-h"></i></h3>
                 <h2>Latest News & Blog</h2>
             </hgroup>
+            <div class="flex-artices">
+                <div class="flex-artices-item">
+                    <img src="/img/artices/book.jpg" alt="book">
+                    <div class="content">
+                        <span><i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-comments"></i> COM(30)</span>
+                        <h4>Learning Resources In Challenec Times Online Workshops</h4>
+                        <div class="info-row">
+                            <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> David Simala
+                        </div>   
+                    </div>
+                    <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
 
-            Learning Resources In Challenec Times Online Workshops
-            Djang Highlights Models Admin And Harness Relational Database
-            Smash Podcast Episode With Lura Kalbag What Is Online Privacy
+                <div class="flex-artices-item">
+                    <img src="/img/artices/park.jpg" alt="book">
+                    <div class="content">
+                        <span><i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-comments"></i> COM(30)</span>
+                        <h4>Djang Highlights Models Admin And Harness Relational Database</h4>   
+                        <div class="info-row">
+                            <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> David Simala
+                        </div>   
+                    </div>
+                    <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+
+                <div class="flex-artices-item">
+                    <img src="/img/artices/learning.jpg" alt="book">
+                    <div class="content">
+                        <span><i class="far fa-calendar-alt"></i> 25 NOV 2020 <i class="far fa-comments"></i> COM(30)</span>
+                        <h4>Smash Podcast Episode With Lura Kalbag What Is Online Privacy</h4>
+                        <div class="info-row">
+                            <img src="/img/instructors/somail.jpg" alt="Avatar" class="avatar"> David Simala
+                        </div>   
+                    </div>
+                    <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+            </div>
+            
         </section>
 
+        <div class="grid-item grid-prefooter">
+            <div class="flex-prefooter">
+                <div class="flex-prefooter-item">
+                    <img src="/img/prefooter1.jpg" alt="pf1">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="/img/prefooter2.jpg" alt="pf1">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="/img/prefooter3.jpg" alt="pf1">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="/img/prefooter4.jpg" alt="pf1">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="/img/prefooter5.jpg" alt="pf1">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg"></div>
         <div class="grid-item grid-footer">
-            <table>
-                <tr>
-                    <td colspan="6">obrazek sponzoru</td>
-                </tr>
-                <tr>
-                    <td colspan="2">EduPlus</td>
-                    <td>Facebook</td>
-                    <td>Twitter</td>
-                    <td>Youtube</td>
-                    <td>Instagram</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Our Courses</td>
-                    <td>Company</td>
-                    <td colspan="3">Newsletters</td>
-                </tr>
-                <tr>
-                    <td>Web Development</td>
-                    <td>Color Combinations</td>
-                    <td>About Eduket</td>
-                    <td colspan="3" rowspan="2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium
-                        doloremque laudantium, totam rem aperiam</td>
-                </tr>
-                <tr>
-                    <td>Bussiness Studies</td>
-                    <td>Software Development</td>
-                    <td>Meet Advisors</td>
-                </tr>
-                <tr>
-                    <td>Computer Engineering</td>
-                    <td>Photography</td>
-                    <td>Join a career</td>
-                    <td colspan="2" rowspan="3"><input type="text" placeholder="Enter Your Email"></td>
-                    <td rowspan="3"><button type="submit">---></button></td>
-                </tr>
-                <tr>
-                    <td>English Learning</td>
-                    <td>Advance WordPress</td>
-                    <td>Latest Courses</td>
-                </tr>
-                <tr>
-                    <td>Graphics Design</td>
-                    <td>Basic PSD To HTML</td>
-                    <td>Newsletters</td>
-                </tr>
-            </table>
+            <hr>
+            <hr>
+            <div class="flex-footer">
+                <div class="flex-footer-item heading">
+                    <img src="/img/footer-logo.png">
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-facebook"></i> Facebook
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-youtube"></i> Youtube
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-twitter"></i> Twitter
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-instagram-square"></i> Instagram
+                </div> 
+                <div class="flex-footer-item info">
+                    <h4>Our Courses</h4>
+                    <i class="fas fa-circle"></i> Web Development<br>
+                    Bussiness Studies<br>
+                    Computer Engineering<br>
+                    English Learning<br>
+                    Graphics Design
+                </div>
+                <div class="flex-footer-item info">
+                    Color Combinations<br>
+                    Software Development<br>
+                    Photography<br>
+                    Advance WordPress<br>
+                    Basic PSD To HTML
+                </div>
+                <div class="flex-footer-item info">
+                    <h4>Company</h4>
+                    About Eduket<br>
+                    Meet Advisors<br>
+                    Join A Career<br>
+                    Latest Courses<br>
+                    Newsletters
+                </div>
+                <div class="flex-footer-item">
+                    <h4>Newsletters</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore perferendis voluptate necessitatibus, iure consequatur impedit laudantium numquam.</p>
+                </div>
+                <div class="flex-footer-item">
+                    <p>Copyright © 2020 EduPlus All Rights Reserved</p>    
+                </div>
+            </div>
         </div>
 
     </div>
