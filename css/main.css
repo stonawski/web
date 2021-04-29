@@ -1,3 +1,4 @@
+
 /* Grid */
 
 .grid{
@@ -147,27 +148,140 @@ li a {
   text-decoration: none;
 }
 
+li a:hover{
+  color: #ea5822;
+}
+
+li a:hover i{
+  color: #ea5822;
+}
+
 .left-nav {
   margin-top: 20px;
   float:left;
+  line-height: 40px;
+}
+
+.left-nav:hover{
+  color: #ea5822;
+}
+
+.left-nav img{
+  height: 40px;
 }
 .right-nav{
-  margin-top: 20px;
+  margin-top: 30px;
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
   list-style-type: none;
   float: right;
+
 }
 .right-nav-item {
   background: white;
   margin: 0 5px;
+}
+.right-nav-item:nth-child(1){
+  background-color: #ea5822;
+}
+.right-nav-item:nth-child(1) i{
+  color: white;
+}
+
+.right-nav-item:nth-child(4){
+  width: 46px;
+  background: transparent;
+  background-image: url(../img/menu.png);
+  background-repeat: no-repeat;
+  
 }
 
 .left-nav i{
   color: #062a35;
 }
 
+.dropdown-menu {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content-menu {
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-top: 3px solid #ea5822;
+}
+
+.dropdown-content-menu a {
+  float: none;
+  color: #587887;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-menu a:hover {
+  background-color: #ea5822;
+  color: white;
+}
+
+.dropdown-menu:hover .dropdown-content-menu {
+  display: block;
+}
+
+.dropdown-menu .dropbtn {   
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'Roboto Black';
+  display: block;
+  color: #062a35;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown-menu .dropbtn:hover{
+  color: #ea5822;
+}
+
+.dropdown-menu .dropbtn:hover i{
+  color: #ea5822;
+}
+
+@media (max-width: 768px) {
+  .left-nav li:first-child{
+    position: absolute;
+  }
+  .left-nav li:not(:first-child), .dropdown-menu .dropbtn{ 
+    margin-top: 80px;
+    font-size: 25px;
+  }
+  .left-nav{
+    margin-left: 80px;
+  }
+  .right-nav-item{
+    visibility: hidden;
+  }  
+
+  .right-nav-item:nth-child(3){
+    visibility: visible;
+    margin-top: 0px;
+    position: absolute;
+    width: 120px;
+    margin-left: -300px;
+  }
+
+}
 /* Celá stránka */
 main {
   background: #eaf4f7;
@@ -360,6 +474,21 @@ h1{
   font-size: 16px;
   position: relative;
   top: -80px;
+}
+
+@media (max-width: 768px) {
+  .bg-main{
+    background-image: none;
+    background-color: #eaf4f7;
+  }
+  .flex-main-item:nth-child(1){
+    width: 80%;
+    margin: auto;
+  }
+  .flex-main-item:nth-child(3){
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /*Flexbox Popular Categories*/
@@ -623,8 +752,8 @@ h1{
   text-align: center;
   line-height: 60px;
   font-size: 25px;
-  top: 315px;
-  left: 530px;
+  top: 345px;
+  left: 550px;
 }
 
 .grid-events .big-button{
@@ -1123,3 +1252,4 @@ h1{
   margin-left: 22%;
   border: 1px solid #cd5a2b;
 }
+
