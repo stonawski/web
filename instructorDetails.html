@@ -2,136 +2,439 @@
 <html lang="cs">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/a255525a84.js" crossorigin="anonymous"></script>
         <title>StonawskiWEB</title>
     </head>
-    <body>
-        <header>
-            <h1>EDU Plus</h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Courses</li>
-                    <li>Events</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                    <li>Contacts</li>
+    <body class="instructor-details">
+        <div class="grid">
+            <nav class="grid-item grid-nav nav-centered">
+                <ul class="menu">
+                    <li class="logo"><a href="./index.html" class="responsive-img"><img src="./img/logo.jpg" alt="logo"></a></li>
+                    <li class="mid-nav"><a href="./index.html">Home<i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./ourCourses.html">Our Courses</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li><a href="./instructorDetails.html">Instructor Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="mid-nav"><a href="#">Courses<i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Course List</a></li>
+                            <li><a href="./coursesDetail.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="mid-nav"><a href="#">Events</a></li>
+                    <li class="mid-nav"><a href="#">Pages</a></li>
+                    <li class="mid-nav"><a href="#">Blog</a></li>
+                    <li class="mid-nav"><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="right">
+                    <li class=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class=""><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class=""><a href="#"><i class="fas fa-user-circle"></i> <span class="responsive-text">SIGN IN</span></a></li>
+                    <li class=""><a href="#"></a></li>
                 </ul>
             </nav>
-            <hgroup>
-                <h2>Event Details</h2>
-                <h3>Home > Event Details</h3>
-            </hgroup>
-        </header>
+            <div class="header-bg"></div>
+            <header class="grid-item grid-header">
+                <hgroup class="section-names">
+                    <h1>Instructor Details</h1>
+                    Home > Instructor Details
+                </hgroup>
+            </header>
 
-        <main>
-            <section>
-                <img src="#" alt="avatar">
-                <h3>Somalia D Silva</h3>
-            </section>
-            <section>
-                <h3>About Me</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis quam. 
-                    Nunc tincidunt ante vitae massa. Etiam dictum tincidunt diam. 
-                    Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. 
-                    Fusce suscipit libero eget elit. Fusce dui leo, imperdiet in, aliquam sit amet, 
-                    feugiat eu, orci. Sed convallis magna eu sem. 
-                    Sed ac dolor sit amet purus malesuada congue. Etiam neque. 
-                    Praesent id justo in neque elementum ultrices. Cras elementum. 
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </p>
-                3045
-                Satisfied Students
-                7852+
-                Available Courses
-            </section>
-            <section>
-                <H3>Certifications</H3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis quam. 
-                    Nunc tincidunt ante vitae massa. Etiam dictum tincidunt diam. 
-                    Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus.</p>
-            </section>
-            <section>
-                <h3>Educations</h3>
-                <h4>World University</h4>
-                Computer Science
-                <h4>World University</h4>
-                Web Development
-                <h3>Experience</h3>
-                <h4>Graphics Designer</h4>
-                <h4>Web Developer</h4>
-            </section>
+        <main class="grid-item grid-instructor">
+            <div class="flex-instructor">
+                <div class="flex-instructor-item">
+                    <img src="./img/instructors/somail.jpg" alt="avatar" >
+                    <div class="content">
+                        <div class="instructor-info">
+                            <h4>Somalia D Silva</h4>
+                            Math Teacher
+                            <hr>
+                            <i class="fas fa-book"></i> 750+ Courses
+                        </div>
+                        <div class="instructor-socials">
+                            <div class="instructor-socials-item"><i class="fab fa-facebook fa-2x fa-2x dropdown-content-item-1"></i></div>
+                            <div class="instructor-socials-item"><i class="fab fa-youtube fa-2x  fa-2x dropdown-content-item-2"></i></div>
+                            <div class="instructor-socials-item"><i class="fab fa-twitter fa-2x  fa-2x dropdown-content-item-1"></i></div>
+                            <div class="instructor-socials-item"><i class="fab fa-twitter fa-2x  fa-2x dropdown-content-item-1"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-instructor-item">
+                    <div class="content">
+                        <h1>About Me</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis quam. 
+                            Nunc tincidunt ante vitae massa. Etiam dictum tincidunt diam. 
+                            Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. 
+                            Fusce suscipit libero eget elit. Fusce dui leo, imperdiet in, aliquam sit amet, 
+                            feugiat eu, orci. Sed convallis magna eu sem. 
+                            Sed ac dolor sit amet purus malesuada congue. Etiam neque. 
+                            Praesent id justo in neque elementum ultrices. Cras elementum. 
+
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                            vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam a cum debitis, 
+                            cupiditate repudiandae facilis magni fugiat dicta ipsam dolores facere quasi odio saepe autem ipsum alias velit. Quae.
+                        </p>
+                        <div class="flex-main-2">
+                            <div class="flex-main-2-item">
+                                <i class="fas fa-users"></i> 3045+<br>
+                                <span>Saticfied Students</span>
+                            </div>
+                            <div class="flex-main-2-item">
+                                <i class="fas fa-book"></i> 7825+<br>
+                                <span>Available Courses</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="flex-instructor-item">
+                    <div class="content">
+                        <H2>Certifications</H2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis quam. 
+                            Nunc tincidunt ante vitae massa. Etiam dictum tincidunt diam. 
+                            Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Consequatur tenetur.
+                        </p>
+                        <img src="./img/instructors/certificate1.jpg" alt="crtfct1">
+                        <img src="./img/instructors/certificate2.jpg" alt="crtfct2">
+                        <img src="./img/instructors/certificate3.jpg" alt="crtfct3">
+                    </div>
+                </div>
+                <div class="flex-instructor-item">
+                    <div class="content">
+                        <h2>Educations</h2>
+                        <div class="content-item">
+                            <i class="fas fa-graduation-cap fa-2x"></i> 
+                            <span>World University</span>
+                            Computer Science
+                        </div>
+                        <div class="content-item">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                            <span>World University</span>
+                            Web Development
+                        </div>
+                        <h2>Experience</h2>
+                        <div class="content-item">
+                            <i class="fas fa-drafting-compass fa-2x"></i> 
+                            <span>Graphics Designer</span> 
+                            Behance.net
+                        </div>
+                        <div class="content-item">
+                            <i class="fas fa-drafting-compass fa-2x"></i> 
+                            <span>Web Developer</span> 
+                            Themeforest.net
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
             
         </main>
-        <section>
-            <hgroup>
-                <h3>--- Popular Courses ---</h3>
-                <h2>Available Courses</h2> 
-            </hgroup>
+        <section class="grid-item grid-pop-cour">
+
+            <h2>Popular Courses</h2>
            
-            <table>
-                <tr>
-                    <td>Best Courses For Learning English Courses</td>
-                    <td>Learning About It Consulting Business Solutions</td>
-                    <td>Introduced About Basic Web Design For Beginners</td>
-                </tr>
-                <tr>
-                    <td>Best Courses For Learning English Courses</td>
-                    <td>Learning About It Consulting Business Solutions</td>
-                    <td>Introduced About Basic Web Design For Beginners</td>
-                </tr>
-            </table>
-            
+            <div class="flex-pop-cour">
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr1.jpg" alt="obr1" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                <p class="rounded-text">English</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3> Courses For Learning English Courses</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">English</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>Courses For Learning English Courses</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+        
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+        
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr4.jpg" alt="obr1" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                <p class="rounded-text">Bussiness</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About It Consulting Business Solutions</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Bussiness</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About It Consulting Business Solutions</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-pop-cour-item">
+                    <div class="wrap">
+                        <div class="visible">
+                            <img src="./img/pop-cat/obr2.jpg" alt="obr2" class="nahled"><br>
+                            <div class="content">
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <hr>
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="content">
+                                <p class="rounded-text">Design</p> 
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                                <h3>About Basic Web Design For Beginners</h3><br>
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Warner <p class="price">$59.95</p><br>
+                                </div>   
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+
+                                <button type="button" class="middle-button">GET ENROLLED <i class="fas fa-long-arrow-alt-right"></i></button>
+
+                                <div class="bottom-info">
+                                    <i class="fas fa-users"></i>25 <i class="far fa-clock"></i>36hr <i class="fas fa-comments"></i>2.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
-            <footer>
-                <table>
-                    <tr>
-                        <td colspan="6">obrazek sponzoru</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">EduPlus</td>
-                        <td>Facebook</td>
-                        <td>Twitter</td>
-                        <td>Youtube</td>
-                        <td>Instagram</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Our Courses</td>
-                        <td>Company</td>
-                        <td colspan="3">Newsletters</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>Color Combinations</td>
-                        <td>About Eduket</td>
-                        <td colspan="3" rowspan="2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</td>
-                    </tr>
-                    <tr>
-                        <td>Bussiness Studies</td>
-                        <td>Software Development</td>
-                        <td>Meet Advisors</td>
-                    </tr>
-                    <tr>
-                        <td>Computer Engineering</td>
-                        <td>Photography</td>
-                        <td>Join a career</td>
-                        <td colspan="2" rowspan="3"><input type="text" placeholder="Enter Your Email"></td>
-                        <td rowspan="3"><button type="submit">---></button></td>
-                    </tr>
-                    <tr>
-                        <td>English Learning</td>
-                        <td>Advance WordPress</td>
-                        <td>Latest Courses</td>
-                    </tr>
-                    <tr>
-                        <td>Graphics Design</td>
-                        <td>Basic PSD To HTML</td>
-                        <td>Newsletters</td>
-                    </tr>
-                </table>
-            </footer>
+        <section class="grid-item grid-space"></section>
+        </section>
+        <div class="grid-item grid-prefooter">
+            <div class="flex-prefooter">
+                <div class="flex-prefooter-item">
+                    <img src="./img/prefooter1.jpg" alt="pf1" class="responsive-img">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="./img/prefooter2.jpg" alt="pf2" class="responsive-img">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="./img/prefooter3.jpg" alt="pf3" class="responsive-img">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="./img/prefooter4.jpg" alt="pf4" class="responsive-img">
+                </div>
+                <div class="flex-prefooter-item">
+                    <img src="./img/prefooter5.jpg" alt="pf5" class="responsive-img">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg"></div>
+        <footer class="grid-item grid-footer">
+            <hr>
+            <hr>
+            <div class="flex-footer">
+                <div class="flex-footer-item heading">
+                    <img src="./img/footer-logo.png" class="responsive-img" alt="footer-logo">
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-facebook"></i> <span>Facebook</span>
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-youtube"></i> <span>Youtube</span> 
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-twitter"></i> <span>Twitter</span>
+                </div>
+                <div class="flex-footer-item heading socials">
+                    <i class="fab fa-instagram-square"></i> <span>Instagram</span>
+                </div> 
+                <div class="flex-footer-item info">
+                    <h4>Our Courses</h4>
+                    <i class="fas fa-circle"></i> Web Development<br>
+                    Bussiness Studies<br>
+                    Computer Engineering<br>
+                    English Learning<br>
+                    Graphics Design
+                </div>
+                <div class="flex-footer-item info">
+                    Color Combinations<br>
+                    Software Development<br>
+                    Photography<br>
+                    Advance WordPress<br>
+                    Basic PSD To HTML
+                </div>
+                <div class="flex-footer-item info">
+                    <h4>Company</h4>
+                    About Eduket<br>
+                    Meet Advisors<br>
+                    Join A Career<br>
+                    Latest Courses<br>
+                    Newsletters
+                </div>
+                <div class="flex-footer-item">
+                    <h4>Newsletters</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore perferendis voluptate necessitatibus, iure consequatur impedit laudantium numquam.</p>
+                </div>
+                <div class="flex-footer-item">
+                    <p>Copyright © 2020 EduPlus All Rights Reserved</p>    
+                </div>
+            </div>
+        </footer>
+        </div>
     </body>
 </html>
