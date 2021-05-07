@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/a255525a84.js" crossorigin="anonymous"></script>
     <title>StonawskiWEB</title>
@@ -17,34 +18,37 @@
         <nav class="grid-item grid-nav">
             <ul class="menu">
                 <li class="logo"><a href="./index.html" class="responsive-img"><img src="./img/logo.jpg" alt="logo"></a></li>
-                <li class="mid-nav"><a href="./index.html">Home<i class="fas fa-angle-down"></i></a>
-                    <ul class="sub-menu">
-                        <li><a href="./ourCourses.html">Our Courses</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./instructorDetails.html">Instructor Details</a></li>
-                    </ul>
-                </li>
-                <li class="mid-nav"><a href="#">Courses<i class="fas fa-angle-down"></i></a>
+                <li><a class="hamburger" id="hamburger"><i class="fa fa-bars"></i></a></li>
+                <div class="responsive-menu" id="menu">
+                    <li class="mid-nav" ><a href="./index.html">Home<i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./ourCourses.html">Our Courses</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li><a href="./instructorDetails.html">Instructor Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="mid-nav"><a href="#">Courses<i class="fas fa-angle-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="#">Course</a></li>
                         <li><a href="#">Course List</a></li>
                         <li><a href="./coursesDetail.html">Course Details</a></li>
                     </ul>
-                </li>
-                <li class="mid-nav"><a href="#">Events<i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <li class="mid-nav"><a href="#">Events<i class="fas fa-angle-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="./eventDetails.html">Event Details</a></li>
                     </ul>
-                </li>
-                <li class="mid-nav"><a href="#">Pages</a></li>
-                <li class="mid-nav"><a href="#">Blog<i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <li class="mid-nav"><a href="#">Pages</a></li>
+                    <li class="mid-nav"><a href="#">Blog<i class="fas fa-angle-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="./blogGrid.html">Blog Grid</a></li>
                         <li><a href="./blogDetails.html">Blog Details</a></li>
                     </ul>
-                </li>
-                <li class="mid-nav"><a href="./contact.html">Contacts</a></li>
+                    </li>
+                    <li class="mid-nav"><a href="./contact.html">Contacts</a></li>
+                </div>
             </ul>
             <ul class="right">
                 <li class=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -640,6 +644,14 @@
         </footer>
 
     </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('menu');     
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        })
+    </script>
 </body>
 
 </html>

@@ -141,6 +141,13 @@
   flex-direction:row;
   justify-content:space-between;
 }
+.menu .responsive-menu{
+  display: flex;
+  flex-direction: row;
+}
+.menu .responsive-menu li:first-child{
+  margin-top: 0px;
+}
 
 .menu li {
   display:block;
@@ -257,7 +264,9 @@ nav ul {
   color: #062a35;
   margin-top: 16px;
 }
-
+.menu .hamburger{
+  display: none;
+}
 @media (max-width: 768px) and (min-width: 481px){
 
   .logo{
@@ -285,12 +294,36 @@ nav ul {
     grid-template-columns: 1fr 480px 1fr;
   }
   .menu{
-    flex-direction: column;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: auto;
+    justify-content: space-between;
+  }
+
+  .menu .hamburger{
+    margin-top: -10px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+  }
+  .menu .hamburger i{
+    font-size: 40px;
   }
   ul.right{
     display: none;
   }
+  .menu .responsive-menu{
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+  .menu .responsive-menu.show{
+    display: block;
+    text-align: center;
+  }
+
+
 }
 /* Celá stránka */
 main {
@@ -1463,9 +1496,6 @@ h1{
   .flex-career-item .inner-flex{
     justify-content: space-around;
   }
-  .flex-career-item .inner-flex-item{
-  
-  }
 }
 
 /* Flex Footer*/
@@ -1661,6 +1691,7 @@ h1{
   background-image: url(../img/students-say-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .about .feedback-bg{
@@ -1881,9 +1912,7 @@ h1{
   .our-courses .flex-pop-cour{
     justify-content: space-around;
   }
-  .our-courses .flex-pop-cour-item{
 
-  }
 }
 /* FAQ */
 
