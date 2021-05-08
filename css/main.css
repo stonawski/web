@@ -1,4 +1,7 @@
 
+body{
+  margin: 0;
+}
 /* Grid */
 
 .grid{
@@ -437,6 +440,32 @@ h4{
   font-size: 22px;
   color: #062a35;
 }
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4862fb;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+
+}
+
+#myBtn i{
+  color: white;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 /*Flexbox Main */
 .flex-main{
   display: flex;
@@ -1140,6 +1169,7 @@ h1{
   width: 320px;
   height: 320px;
   position: relative;
+  cursor: pointer;
 }
 
 .flex-photo-item:nth-child(1){
@@ -1202,6 +1232,23 @@ h1{
   color: #ea5822;
 }
 
+#lightbox{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media (max-width: 768px) and (min-width: 481px){
   .flex-photo{
     justify-content: space-around;
@@ -1253,6 +1300,7 @@ h1{
 
 .flex-feedback .small-button{
   background-color: #cddde3;
+  cursor: pointer;
 }
 
 .flex-feedback .small-button:hover{
@@ -1287,8 +1335,8 @@ h1{
 
 .flex-feedback .info-row{
   color: #062a35;
-  margin-top: 120px;
-  margin-left: -65px;
+  margin-top: 70px;
+  margin-left: -45px;
 }
 
 .flex-feedback .info-row span{
@@ -1365,6 +1413,37 @@ h1{
   color: white;
 }
 
+.slideshow {
+  margin: auto;
+  display: flex;
+}
+
+.slides {
+  position: relative; 
+  flex-grow: 1;
+  height: 12em;
+}
+
+.slideshow__slide {
+  position: absolute;
+  display:none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+ .active{
+  display: flex;
+}
+
+.slideshow__slide span {
+  font-family: Monospace;
+  font-size: 4em;
+  color: white;
+}
+
+
+
 @media (max-width: 768px){
   .flex-feedback{
     flex-wrap: wrap;
@@ -1372,6 +1451,11 @@ h1{
   
   .flex-feedback-item:nth-child(2){
     display: none;
+  }
+
+  .flex-feedback .buttons{
+    margin-top: 150px;
+    margin-left: -150px;
   }
 }
 

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="./script.js"></script>
+    <script defer src="./feedback-script.js"></script>
     <script src="https://kit.fontawesome.com/a255525a84.js" crossorigin="anonymous"></script>
     <title>StonawskiWEB</title>
 </head>
 
 <body class="index">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <div class="grid">  
         <div class="bg-main"></div>
         <div class="bg-light-main"></div>
@@ -291,42 +294,42 @@
 
             <div class="flex-photo">
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img1.jpg" alt="img1">
+                    <img src="./img/gallery/img1.jpg" alt="img1" class="gallery-pic"> 
                     <div class="flex-photo-overlay">
                         <h4>University</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img2.jpg" alt="img2">
+                    <img src="./img/gallery/img2.jpg" alt="img2" class="gallery-pic">
                     <div class="flex-photo-overlay">
                         <h4>Group Study</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img3.jpg" alt="img3">
+                    <img src="./img/gallery/img3.jpg" alt="img3" class="gallery-pic">
                     <div class="flex-photo-overlay">
                         <h4>Awards</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img4.jpg" alt="img4">
+                    <img src="./img/gallery/img4.jpg" alt="img4" class="gallery-pic">
                     <div class="flex-photo-overlay">
                         <h4>Students</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img5.jpg" alt="img5">
+                    <img src="./img/gallery/img5.jpg" alt="img5" class="gallery-pic">
                     <div class="flex-photo-overlay">
                         <h4>Teachers</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
                 <div class="flex-photo-item">
-                    <img src="./img/gallery/img6.jpg" alt="img6">
+                    <img src="./img/gallery/img6.jpg" alt="img6" class="gallery-pic">
                     <div class="flex-photo-overlay">
                         <h4>Campus</h4>
                         <button class="small-button"><i class="fas fa-long-arrow-alt-right"></i></button>
@@ -461,17 +464,49 @@
 
             <div class="flex-feedback">
                 <div class="flex-feedback-item">
-                    <div class="content">
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, sint, pariatur eius, quaerat numquam perspiciatis illo harum voluptate amet dolores ducimus vel et? Optio.</p>
-                        <div class="thin-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, sunt?</div> 
-                        <div class="info-row">
-                            <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Sousa Fernandes<br> <span>CEO & Founder</span> 
-                        </div>   
-                        <div class="buttons">
-                            <button class="small-button"><i class="fas fa-arrow-left"></i></button>
-                            <button class="small-button"><i class="fas fa-arrow-right"></i></button>
+                    <div class="slides">
+                        <div class="slideshow__slide">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, sint, pariatur eius, quaerat numquam perspiciatis illo harum voluptate amet dolores ducimus vel et? Optio.</p>
+                                <div class="thin-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, sunt?</div> 
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Sousa Fernandes<br> <span>CEO & Founder</span> 
+                                </div>   
+                                <div class="buttons">
+                                    <button class="small-button" onclick="moveToPrevSlide()"><i class="fas fa-arrow-left"></i></button>
+                                    <button class="small-button" onclick="moveToNextSlide()"><i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <i class="fas fa-quote-left fa-5x"></i>
+                            </div>
                         </div>
-                        <i class="fas fa-quote-left fa-5x"></i>
+                        <div class="slideshow__slide">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, sint, pariatur eius, quaerat numquam perspiciatis illo harum voluptate amet dolores ducimus vel et? Optio.</p>
+                                <div class="thin-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, sunt?</div> 
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> Daniel Stonawski<br> <span>Student</span> 
+                                </div>   
+                                <div class="buttons">
+                                    <button class="small-button" onclick="moveToPrevSlide()"><i class="fas fa-arrow-left"></i></button>
+                                    <button class="small-button" onclick="moveToNextSlide()"><i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <i class="fas fa-quote-left fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="slideshow__slide">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, sint, pariatur eius, quaerat numquam perspiciatis illo harum voluptate amet dolores ducimus vel et? Optio.</p>
+                                <div class="thin-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, sunt?</div> 
+                                <div class="info-row">
+                                    <img src="./img/instructors/somail.jpg" alt="Avatar" class="avatar"> David Beckham<br> <span>Instructor</span> 
+                                </div>   
+                                <div class="buttons">
+                                    <button class="small-button" onclick="moveToPrevSlide()"><i class="fas fa-arrow-left"></i></button>
+                                    <button class="small-button" onclick="moveToNextSlide()"><i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <i class="fas fa-quote-left fa-5x"></i>
+                            </div>
+                        </div>
                     </div>   
                 </div>
                 <div class="flex-feedback-item">
@@ -652,6 +687,27 @@
             navUL.classList.toggle('show');
         })
     </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>
